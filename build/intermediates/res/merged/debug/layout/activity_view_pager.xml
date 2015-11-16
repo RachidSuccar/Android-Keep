@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_view"
+    android:background="@color/bg_light_gray_on_pressed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/indicator"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Rachid/Desktop/Projects/Keep/Password%20Manager/Keep/res/layout/activity_view_pager.xml -->

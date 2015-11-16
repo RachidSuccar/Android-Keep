@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.funnel.keep"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- getting phone infos -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- for reading images from gallery -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- VIBRATION -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- QR CODE SCANNER -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- Check internet connection -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- permission as GCM requires a Google account (necessary only if if the device is running a version lower than Android 4.0.4) -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.rayou.keep.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.rayou.keep.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name="activities.KeepApplicationContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="activities.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|keyboard|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name="managers.MySQLiteHelper"
+            android:label="@string/app_name" >
+        </activity>
+        -->
+        <activity
+            android:name="activities.ViewPagerActivity"
+            android:label="@string/title_activity_view_pager"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="activities.ImageViewPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="fragments.BaseFragment"
+            android:label="@string/title_activity_base_fragment" >
+        </activity>
+        <activity
+            android:name="activities.QrScannerActivity"
+            android:label="@string/title_activity_qr_scanner_activity" >
+        </activity>
+        <activity
+            android:name="activities.NotificationReceiverActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_notificationreceiver_activity"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+
+        <receiver
+            android:name="gcm.GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.rayou.keep" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="gcm.GcmIntentService" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a85cfc757a4d8ee1d9bb53972671e6f6e5e7280c" />
+    </application>
+
+</manifest>

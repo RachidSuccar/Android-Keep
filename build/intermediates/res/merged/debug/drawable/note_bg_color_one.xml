@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/note_pressed_color_one" android:state_pressed="true"/>
+    <item android:drawable="@drawable/note_color_one"/>
+
+</selector><!-- From: file:/C:/Users/Rachid/Desktop/Projects/Keep/Password%20Manager/Keep/res/drawable/note_bg_color_one.xml -->

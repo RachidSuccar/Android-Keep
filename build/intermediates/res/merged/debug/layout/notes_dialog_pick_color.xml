@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/dialog_rounded_corner"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/TextView_dialoMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Pick note color"
+            android:textColor="@color/medium_gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/color_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/TextView_dialoMessage"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/frameLayout_defaultColor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/on_pressed_background_color_change_white_back"
+                android:clickable="true" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/notes_color_three" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout_blue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/on_pressed_background_color_change_white_back"
+                android:clickable="true" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/notes_color_two" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout_red"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/on_pressed_background_color_change_white_back"
+                android:clickable="true" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/notes_color_one" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/Divider_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/color_layout"
+            android:background="@color/light_gray" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_dismissB"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/Divider_dialog"
+            android:layout_alignStart="@+id/Divider_dialog"
+            android:layout_below="@+id/Divider_dialog"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/on_pressed_background_color_change_white_back"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/TextView_Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="Dismiss"
+                android:textColor="@color/medium_gray"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Rachid/Desktop/Projects/Keep/Password%20Manager/Keep/res/layout/notes_dialog_pick_color.xml -->

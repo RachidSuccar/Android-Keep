@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="+"
+        android:textColor="@color/dark_gray"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/add"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="New Item"
+        android:textColor="@color/dark_gray"
+        android:textSize="20sp" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Rachid/Desktop/Projects/Keep/Password%20Manager/Keep/res/layout/checklist_footer.xml -->

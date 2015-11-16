@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="rectangle" >
+   <solid android:color="@color/light_gray" />
+ </shape><!-- From: file:/C:/Users/Rachid/Desktop/Projects/Keep/Password%20Manager/Keep/res/drawable/normal_background.xml -->

@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_color" >
+
+        <LinearLayout
+            android:id="@+id/back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/on_pressed_background_color_change_toolbar"
+            android:clickable="true"
+            android:gravity="center_vertical|start"
+            android:minWidth="50dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@string/defoult_content_description"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="Database"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_backup"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/relativeLayout_toolbar"
+        android:background="@drawable/on_pressed_background_color_change_white_back"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/imageView_sync"
+            android:layout_toStartOf="@+id/imageView_sync"
+            android:gravity="center_vertical|start"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/backup_data"
+                android:textColor="@color/medium_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/LastBackup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/medium_gray"
+                android:textSize="15sp"
+                android:typeface="normal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_sync"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/defoult_content_description"
+            android:src="@drawable/phone_server" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_restore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/relativeLayout_backup"
+        android:background="@drawable/on_pressed_background_color_change_white_back"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/imageView_checkBox"
+            android:layout_toStartOf="@+id/imageView_checkBox"
+            android:gravity="center_vertical|start"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restore_data"
+                android:textColor="@color/medium_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/LastRestore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/medium_gray"
+                android:textSize="15sp"
+                android:typeface="normal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_checkBox"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/defoult_content_description"
+            android:src="@drawable/server_phone" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Rachid/Desktop/Projects/Keep/Password%20Manager/Keep/res/layout/database_fragment.xml -->

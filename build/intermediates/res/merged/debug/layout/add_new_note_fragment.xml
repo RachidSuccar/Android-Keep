@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addnoteMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/note_color_one"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_color" >
+
+        <LinearLayout
+            android:id="@+id/back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/on_pressed_background_color_change_toolbar"
+            android:clickable="true"
+            android:gravity="center_vertical|start"
+            android:onClick="onBackClicked"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@string/defoult_content_description"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:id="@+id/title_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="start"
+                android:text="@string/new_note"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/done_layout"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/on_pressed_background_color_change_toolbar"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/textView_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/view_dividerOne"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/done_layout"
+            android:layout_toStartOf="@id/done_layout"
+            android:background="@color/bg_light_gray_on_pressed" />
+
+        <FrameLayout
+            android:id="@+id/brush_layout"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/view_dividerOne"
+            android:layout_toStartOf="@id/view_dividerOne"
+            android:background="@drawable/on_pressed_background_color_change_toolbar"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:contentDescription="@string/defoult_content_description"
+                android:src="@drawable/brush_color" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout_toolbar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/noteCreationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:textColor="@color/medium_gray"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/noteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noteCreationDate"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/title"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/medium_gray"
+                android:textSize="19sp"
+                android:maxEms="4000"
+                android:textStyle="bold" >
+            </EditText>
+
+            <utilities.LinedEditText
+                android:id="@+id/noteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noteTitle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:gravity="top|start"
+                android:hint="@string/note"
+                android:maxEms="4000"
+                android:inputType="textCapSentences|textMultiLine"
+                android:scrollbars="vertical"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/medium_gray"
+                android:textSize="19sp" >
+            </utilities.LinedEditText>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/C:/Users/Rachid/Desktop/Projects/Keep/Password%20Manager/Keep/res/layout/add_new_note_fragment.xml -->

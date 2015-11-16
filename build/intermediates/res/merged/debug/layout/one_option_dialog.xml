@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/dialog_rounded_corner"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_deleteComment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/on_pressed_light_gray"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/CustomTextView_optionOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/delete_pass"
+                android:textColor="@color/medium_gray"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/C:/Users/Rachid/Desktop/Projects/Keep/Password%20Manager/Keep/res/layout/one_option_dialog.xml -->

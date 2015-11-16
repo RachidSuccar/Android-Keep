@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Keep</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="defoult_content_description"></string>
+    <string name="action_settings">Settings</string>
+    <string name="keep_safe">Keep</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main_activitys">MainActivitys</string>
+    <string name="title_activity_view_pager">ViewPagerActivity</string>
+    <string name="title_activity_base_fragment">BaseFragment</string>
+    <string name="title_activity_qr_scanner_activity">QrScannerActivity</string>
+    <string name="title_activity_notificationreceiver_activity">NotificationReceiverActivity</string>
+    <string name="passwods">Passwords</string>
+    <string name="passwods_and_notes">Passwords &amp; Notes</string>
+    <string name="keep_web">Keep WEB</string>
+    <string name="pictures">Pictures</string>
+    <string name="settings">Settings</string>
+    <string name="notes">Notes</string>
+    <string name="note">Note</string>
+    <string name="new_entry">New entry</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="new_pass_category">Add new password category</string>
+    <string name="new_pic_category">Add new picture category</string>
+    <string name="new_note_category">Add new note category</string>
+    <string name="new_album">New album</string>
+    <string name="done">Done</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="add">Add</string>
+    <string name="unlock">Unlock</string>
+    <string name="change_pass">Change Password</string>
+    <string name="title">Title</string>
+    <string name="required">*</string>
+    <string name="enter_titlle">Enter title</string>
+    <string name="account">Account</string>
+    <string name="enter_account">Enter account</string>
+    <string name="app_password">Application Password</string>
+    <string name="backup_password">Backup Password</string>
+    <string name="enter_pass">Enter password</string>
+    <string name="user_name">Username</string>
+    <string name="enter_username">Enter username</string>
+    <string name="description">Description</string>
+    <string name="enter_description">Enter description</string>
+    <string name="delete_pass">Delete Password</string>
+    <string name="clea_web_text">Clear sent text list</string>
+    <string name="delete_cat">Delete Category</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="edit">Edit</string>
+    <string name="edit_pass">Edit password</string>
+    <string name="logout_web">Log out from all your computers</string>
+    <string name="password_info_has_been_updated">Password info has been updated.</string>
+    <string name="edit_cat_title">Edit category title</string>
+    <string name="edit_title">Edit title</string>
+    <string name="edit_title_hint">Enter new title</string>
+    <string name="text_cpied_clip">Password copied to clipboard</string>
+    <string name="cur_pass">Current password</string>
+    <string name="email">Email</string>
+    <string name="empty">Empty</string>
+    <string name="add_categrie">ADD NEW CATEGORY</string>
+    <string name="add_album">ADD NEW ALBUM</string>
+    <string name="add_pass">ADD PASSWORD</string>
+    <string name="con_pass">Confirm password</string>
+    <string name="pass_not_same">Password you typed do not match</string>
+    <string name="pass_contain_numb">Password must contain at least one number</string>
+    <string name="pass_contain_character">Password must contain at least one character</string>
+    <string name="pass_min_eight_char">password should be minimum 8 characters</string>
+    <string name="sync">Synchronize</string>
+    <string name="are_you_sure_delete">Are you sure you want to delete it?</string>
+    <string name="new_pass">New password</string>
+    <string name="are_you_sure_delete_cate">Are you sure you want to delete this category?</string>
+    <string name="date_">Published July 30, 2015</string>
+
+    <!-- Settings -->
+    <string name="web_setting">Visit keep-web.com on your computer and copy texts from pc to your phone clipboard</string>
+    <string name="database_setting">Backup and restore your encrypted passwords and notes on a secure restore server</string>
+    <string name="database">Database</string>
+    <string name="images">Images</string>
+    <string name="image_trasnfer">Transfer</string>
+    <string name="autoexit">Auto Lock </string>
+    <string name="autoexit_explanation">Lock when the app is put in the background</string>
+    <string name="move_image">Move image from phone to KeepSafe</string>
+    <string name="copy_image">Copy image from phone to KeepSafe</string>
+    <string name="help">Help</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_service">Terms of Service</string>
+    <string name="about">About</string>
+    <string name="rights_reserved">\u00a9 2015 All rights reserved.</string>
+    <string name="developer">Developer</string>
+    <string name="me">Rachid Succar</string>
+    <string name="me_mail">rachidsuccar@gmail.com</string>
+    <string name="data_collection">Data Collection</string>
+    <string name="terms_condition">Terms and Conditions</string>
+    <string name="security">Security</string>
+    <string name="security_privacy">The security of your personal information is extremely important. We take the following precoutions to make sure it cannot be accessed or altered: \n - Data encrypted in transit using HTTPS for all service calls. \n - Data encypted in storage and database to a secure server.</string>
+    <string name="email_datacollection">The only required information is your email in case you want to backup your passwords and notes to a secure restore server.</string>
+    <string name="terms_1">Please read these Terms and Conditions carefully before using Keep application operated by us. Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. \nThese Terms apply to all visitors, users and others who access, register or use the Service.
+	By accessing, registering or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</string>
+    <string name="terms_2">&#160;&#160;&#160;1.&#160;&#160;&#160;Conditions Of Use</string>
+    <string name="terms_3">&#160;&#160;&#160;&#160;&#160;&#160;a. You are responsible for safeguarding the password that you use to access the Services and for any activities or actions under your password. Keep cannot and will not be liable for any loss or damage arising from your failure to comply with the above.</string>
+    <string name="terms_4">&#160;&#160;&#160;&#160;&#160;&#160;b. You may not use our service for any unlawful purposes or in furtherance of illegal activities. International users agree to comply with all local laws regarding online conduct and acceptable content.</string>
+    <string name="terms_5">&#160;&#160;&#160;&#160;&#160;&#160;c. You may  NOT forge any TCP/IP packet header or any part of the header information in any email or posting, or in any way use the Services to send altered, deceptive or false source-identifying informatio.</string>
+    <string name="terms_6">&#160;&#160;&#160;2.&#160;&#160;&#160; Your License To Use the Services</string>
+    <string name="terms_7">Keep gives you a personal, worldwide, royalty-free, non-assignable and non-exclusive license to use the software that is provided to you by Keep as part of the Services. This license is for the sole purpose of enabling you to use and enjoy the benefit of the Services as provided by Keep, in the manner permitted by these Terms.</string>
+    <string name="terms_8">&#160;&#160;&#160;3.&#160;&#160;&#160; Copyright Policy</string>
+    <string name="terms_9">Keep respects the intellectual property rights of others and expects users of the Services to do the same. We will respond to notices of alleged copyright infringement that comply with applicable law and are properly provided to us. If you believe that your Content has been copied in a way that constitutes copyright infringement, please contact us at Keep.funnel@gmail.com
+	We reserve the right to remove Content alleged to be infringing without prior notice, at our sole discretion, and without liability to you. In appropriate circumstances, Keep will also terminate a user’s account if the user is determined to be a repeat infringer.</string>
+    <string name="terms_10">&#160;&#160;&#160;4.&#160;&#160;&#160; Our Rights</string>
+    <string name="terms_11">Any feedback, comments, or suggestions you may provide regarding Keep, or the Services is entirely voluntary and we will be free to use such feedback, comments or suggestions as we see fit and without any obligation to you.</string>
+    <string name="terms_12">&#160;&#160;&#160;5.&#160;&#160;&#160; Ending These Terms</string>
+    <string name="terms_13">The Terms will continue to apply until terminated by either you or Keep as follows.
+	You may end your legal agreement with Keep at any time for any reason by removing the application from all your devices and discontinuing your use of the Services. You do not need to specifically inform Keep when you stop using the Services.
+	In all such cases, the Terms shall terminate, including, without limitation, your license to use the Services, except that the following sections shall continue to apply: 1, 3 and 4.</string>
+    <string name="terms_14">&#160;&#160;&#160;6.&#160;&#160;&#160; Disclaimer</string>
+    <string name="terms_15"> © 2015 Keep All Rights Reserved
+	THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</string>
+    <string name="terms_16">&#160;&#160;&#160;7.&#160;&#160;&#160; Contact Us</string>
+    <string name="terms_17">If you have any questions about these Terms, please contact us at rachid.succar@gmail.com\n</string>
+
+    <!-- Toast -->
+    <string name="email_should_not_be_empty">Email should not be empty</string>
+    <string name="title_should_not_be_empty">Title should not be empty</string>
+    <string name="note_should_not_be_empty">Note should not be empty</string>
+    <string name="password_should_not_be_empty">Password should not be empty</string>
+    <string name="password_wrong">Wrong application password</string>
+    <string name="album_should_not_be_empty">Album title should not be empty</string>
+    <string name="album_already_exist">Album already exist</string>
+    <string name="update_successfully">Update successfully completed</string>
+    <string name="restore_successfully">Restore successfully completed</string>
+    <string name="wrong_application_password">Wrong password please enter your application password</string>
+    <string name="content_cop_clip">Content copied to clipboard</string>
+
+    <!-- Dialogs -->
+    <string name="noramle_note">Note</string>
+    <string name="restore_pic">Move back to public library</string>
+    <string name="checklist_note">Checklist</string>
+    <string name="delete_pic">Delete Pic</string>
+
+    <!-- Labels -->
+    <string name="edit_checklist">Edit Checklist</string>
+    <string name="new_checklist">New Checklist</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="new_note">New Note</string>
+    <string name="backup">KeepWeb</string>
+    <string name="web_texts">Web Sent Texts</string>
+    <string name="restore">Restore</string>
+    <string name="backup_page_hint">This password will be used to encrypt your personal data</string>
+    <string name="restore_page_hint">Enter the password you used when you created the backup</string>
+
+    <!-- Buttons -->
+    <string name="backup_data">Backup data</string>
+    <string name="restore_data">Restore data</string>
+
+    <!-- Others -->
+    <string name="error_db_connection_closed">Oups something went wrong, could not open data base please try again later</string>
+    <string name="error_generale">Oups something went wrong,  please try again later</string>
+    <string name="pass_tip">Choose your password carefully and DO NOT LOSE IT. Your password will be used to encrypt your data, if you lose it, you will not be able to retrieve your data.</string>
+	<string name="wrong_pass">Wrong password</string>
+    
+</resources>

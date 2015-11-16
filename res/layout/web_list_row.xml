@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/rounded_layout_bg"
+        android:minHeight="50dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/webText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="35dp"
+                android:ellipsize="end"
+                android:textColor="@color/dark_gray"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/webDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="end"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/copyLayout"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rounded__bg" >
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/defoult_content_description"
+            android:src="@drawable/copy_white" />
+    </RelativeLayout>
+
+</RelativeLayout>

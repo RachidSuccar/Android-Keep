@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true" >
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/note_color_one"
+        android:minHeight="50dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:minHeight="50dp" >
+
+                <RelativeLayout
+                    android:id="@+id/checkLayout"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top"
+                    android:tag="false" >
+
+                    <ImageView
+                        android:id="@+id/checkBox"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/defoult_content_description"
+                        android:src="@drawable/checklist_row" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/checkListTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/checkLayout"
+                    android:background="@android:color/transparent"
+                    android:descendantFocusability="beforeDescendants"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:text="Checklist"
+                    android:textColor="@color/medium_gray"
+                    android:textSize="19sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/noteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/dark_gray"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/noteCreationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="end"
+                android:textColor="@color/medium_gray"
+                android:textSize="15sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/RelativeLayout_icon"
+            android:layout_toRightOf="@+id/RelativeLayout_icon"
+            android:background="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
